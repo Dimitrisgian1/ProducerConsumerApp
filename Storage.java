@@ -1,19 +1,16 @@
 package lab1;
 
-import java.util.ArrayList;
-
 public class Storage 
 {
-	static ArrayList<Good> goods = new ArrayList<Good>();
+	static Good[] goods;
 	
 	public static void put(Good g)
 	{
-		goods.add(g);
+		goods[0] = g;
 	}
 	
 	public static Good get()
 	{
-		return goods.get(goods.size() - 1);
+		return goods[0];
 	}
 }
-
